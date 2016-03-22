@@ -9,5 +9,8 @@
     "type": "git",
     "url": "git://github.com/"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "devDependencies": {
+    "serverless": "^0.4.2"
+  }
 }
