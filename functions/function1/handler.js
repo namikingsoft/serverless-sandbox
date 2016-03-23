@@ -1,7 +1,6 @@
-'use strict';
+require('source-map-support').install()
+const lib = require('../../lib')
 
 module.exports.handler = (event, context) => {
-  return context.done(null, {
-    message: 'Go Serverless! Your Lambda function executed successfully!'
-  });
-};
+  lib(event, (err, data) => context.done(err, data))
+}

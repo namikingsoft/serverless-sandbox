@@ -41,3 +41,9 @@ admin.env
 
 #Ignore _meta folder
 _meta
+
+# typings
+/typings
+
+# built files
+/lib
