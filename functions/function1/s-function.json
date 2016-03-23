@@ -9,6 +9,19 @@
   "memorySize": 128,
   "authorizer": {},
   "custom": {
+    "optimize": {
+      "exclude": ["aws-sdk"],
+      "transforms": [
+        {
+          "name": "babelify",
+          "opts": {
+            "presets": [
+              "es2015"
+            ]
+          }
+        }
+      ]
+    },
     "excludePatterns": []
   },
   "endpoints": [
