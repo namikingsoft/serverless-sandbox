@@ -35,5 +35,13 @@
       }
     }
   ],
-  "events": []
+  "events": [
+    {
+      "name": "crontask",
+      "type": "schedule",
+      "config": {
+        "schedule": "rate(5 minutes)"
+      }
+    }
+  ]
 }
