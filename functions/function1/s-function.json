@@ -38,7 +38,15 @@
       }
     }
   ],
-  "events": [],
+  "events": [
+    {
+      "name": "crontask",
+      "type": "schedule",
+      "config": {
+        "schedule": "rate(5 minutes)"
+      }
+    }
+  ],
   "environment": {
     "SERVERLESS_PROJECT": "serverless-sandbox",
     "SERVERLESS_STAGE": "${stage}",
