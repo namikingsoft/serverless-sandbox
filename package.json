@@ -1,5 +1,5 @@
 {
-  "name": "serverless-nkgel7",
+  "name": "serverless-sandbox",
   "version": "0.0.1",
   "description": "A Serverless Project and its Serverless Plugin dependencies.",
   "author": "me",
@@ -11,6 +11,7 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "serverless": "^0.4.2"
+    "npm-check-updates": "^2.6.1",
+    "serverless": "^0.5.0"
   }
 }

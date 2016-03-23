@@ -1,13 +1,15 @@
 {
   "name": "function1",
+  "runtime": "nodejs",
+  "description": "Serverless Lambda function for project: serverless-sandbox",
   "customName": false,
   "customRole": false,
-  "handler": "function1/handler.handler",
-  "timeout": 6,
-  "memorySize": 1024,
+  "handler": "handler.handler",
+  "timeout": 300,
+  "memorySize": 128,
+  "authorizer": {},
   "custom": {
-    "excludePatterns": [],
-    "envVars": []
+    "excludePatterns": []
   },
   "endpoints": [
     {
@@ -15,6 +17,7 @@
       "method": "GET",
       "type": "AWS",
       "authorizationType": "none",
+      "authorizerFunction": false,
       "apiKeyRequired": false,
       "requestParameters": {},
       "requestTemplates": {
@@ -43,5 +46,14 @@
         "schedule": "rate(5 minutes)"
       }
     }
-  ]
+  ],
+  "environment": {
+    "SERVERLESS_PROJECT": "serverless-sandbox",
+    "SERVERLESS_STAGE": "${stage}",
+    "SERVERLESS_REGION": "${region}"
+  },
+  "vpc": {
+    "securityGroupIds": [],
+    "subnetIds": []
+  }
 }
