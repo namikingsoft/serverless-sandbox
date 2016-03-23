@@ -9,5 +9,9 @@
     "type": "git",
     "url": "git://github.com/"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "devDependencies": {
+    "npm-check-updates": "^2.6.1",
+    "serverless": "^0.5.0"
+  }
 }
