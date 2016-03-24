@@ -3,7 +3,6 @@
   "version": false,
   "dependencies": {},
   "ambientDependencies": {
-    "aws-sdk": "registry:dt/aws-sdk#0.0.0+20160316155526",
     "bluebird": "registry:dt/bluebird#2.0.0+20160319051630",
     "lodash": "registry:dt/lodash#3.10.0+20160319050323",
     "node": "registry:dt/node#4.0.0+20160319033040"
