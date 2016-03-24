@@ -1,10 +1,8 @@
 {
   "apiGatewayRequestTemplate": {
     "application/json": {
-      "body": "$input.json('$')",
-      "path" : "$input.params().path",
-      "query" : "$input.params().querystring",
       "method": "$context.httpMethod",
+      "body": "$input.json('$')",
       "id": "$input.params('id')"
     }
   },
