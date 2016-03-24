@@ -1,0 +1,12 @@
+{
+  "name": "app",
+  "version": "0.0.0",
+  "preferGlobal": true,
+  "description": "app component",
+  "author": "",
+  "license": "MIT",
+  "keywords": [],
+  "dependencies": {
+    "source-map-support": "^0.4.0"
+  }
+}

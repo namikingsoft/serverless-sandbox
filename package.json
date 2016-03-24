@@ -13,10 +13,7 @@
     "postinstall": "typings install",
     "build": "tsc",
     "deploy": "npm run build && sls dash deploy",
-    "start": "npm run build && sls function run app"
-  },
-  "dependencies": {
-    "source-map-support": "^0.4.0"
+    "start": "npm run build && sls function run main"
   },
   "devDependencies": {
     "npm-check-updates": "^2.6.1",
