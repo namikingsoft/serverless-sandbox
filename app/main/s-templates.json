@@ -1,0 +1,24 @@
+{
+  "apiGatewayRequestTemplate": {
+    "application/json": {
+      "body": "$input.json('$')",
+      "path" : "$input.params().path",
+      "query" : "$input.params().querystring",
+      "method": "$context.httpMethod",
+      "id": "$input.params('id')"
+    }
+  },
+  "apiGatewayResponses": {
+    "400": {
+      "statusCode": "400"
+    },
+    "default": {
+      "statusCode": "200",
+      "responseParameters": {},
+      "responseModels": {},
+      "responseTemplates": {
+        "application/json": ""
+      }
+    }
+  }
+}
