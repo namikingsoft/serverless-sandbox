@@ -46,4 +46,4 @@ _meta
 /typings
 
 # built files
-/lib
+/app/lib

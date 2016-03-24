@@ -5,8 +5,8 @@
     "noImplicitAny": true,
     "noEmitOnError": true,
     "moduleResolution": "node",
-    "baseUrl": "./src",
-    "outDir": "./lib",
+    "baseUrl": "./lib",
+    "outDir": "./app/lib",
     "strictNullChecks": true,
     "experimentalDecorators": true
   },

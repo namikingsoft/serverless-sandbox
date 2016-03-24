@@ -1,5 +1,5 @@
 {
-  "name": "function1",
+  "name": "app",
   "runtime": "nodejs",
   "description": "Serverless Lambda function for project: serverless-sandbox",
   "customName": false,
@@ -26,7 +26,7 @@
   },
   "endpoints": [
     {
-      "path": "function1",
+      "path": "app",
       "method": "GET",
       "type": "AWS",
       "authorizationType": "none",
