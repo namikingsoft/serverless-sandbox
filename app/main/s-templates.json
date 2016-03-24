@@ -1,22 +1,7 @@
 {
   "apiGatewayRequestTemplate": {
     "application/json": {
-      "method": "$context.httpMethod",
-      "body": "$input.json('$')",
-      "id": "$input.params('id')"
-    }
-  },
-  "apiGatewayResponses": {
-    "400": {
-      "statusCode": "400"
-    },
-    "default": {
-      "statusCode": "200",
-      "responseParameters": {},
-      "responseModels": {},
-      "responseTemplates": {
-        "application/json": ""
-      }
+      "tableName": "${project}-messages-${stage}"
     }
   }
 }
