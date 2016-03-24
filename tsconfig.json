@@ -11,9 +11,10 @@
     "experimentalDecorators": true
   },
   "exclude": [
-    "node_modules",
-    "typings",
+    "app",
     "test",
+    "typings",
+    "node_modules",
     "_meta"
   ]
 }
