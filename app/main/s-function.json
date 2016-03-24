@@ -1,32 +1,19 @@
 {
-  "name": "app",
+  "name": "main",
   "runtime": "nodejs",
   "description": "Serverless Lambda function for project: serverless-sandbox",
   "customName": false,
   "customRole": false,
-  "handler": "handler.handler",
+  "handler": "main/handler.handler",
   "timeout": 300,
   "memorySize": 128,
   "authorizer": {},
   "custom": {
-    "optimize": {
-      "exclude": ["aws-sdk"],
-      "transforms": [
-        {
-          "name": "babelify",
-          "opts": {
-            "presets": [
-              "es2015"
-            ]
-          }
-        }
-      ]
-    },
     "excludePatterns": []
   },
   "endpoints": [
     {
-      "path": "app",
+      "path": "main",
       "method": "GET",
       "type": "AWS",
       "authorizationType": "none",
