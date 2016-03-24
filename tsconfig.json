@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "noEmitOnError": true,
+    "moduleResolution": "node",
+    "baseUrl": "./lib",
+    "outDir": "./app/lib",
+    "strictNullChecks": true,
+    "experimentalDecorators": true
+  },
+  "exclude": [
+    "node_modules",
+    "typings",
+    "test",
+    "_meta"
+  ]
+}

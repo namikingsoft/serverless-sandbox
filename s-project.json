@@ -1,4 +1,7 @@
 {
   "name": "serverless-sandbox",
-  "custom": {}
+  "custom": {},
+  "plugins": [
+    "serverless-optimizer-plugin"
+  ]
 }

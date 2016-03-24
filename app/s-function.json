@@ -1,5 +1,5 @@
 {
-  "name": "function1",
+  "name": "app",
   "runtime": "nodejs",
   "description": "Serverless Lambda function for project: serverless-sandbox",
   "customName": false,
@@ -9,11 +9,24 @@
   "memorySize": 128,
   "authorizer": {},
   "custom": {
+    "optimize": {
+      "exclude": ["aws-sdk"],
+      "transforms": [
+        {
+          "name": "babelify",
+          "opts": {
+            "presets": [
+              "es2015"
+            ]
+          }
+        }
+      ]
+    },
     "excludePatterns": []
   },
   "endpoints": [
     {
-      "path": "function1",
+      "path": "app",
       "method": "GET",
       "type": "AWS",
       "authorizationType": "none",
