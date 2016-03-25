@@ -13,7 +13,7 @@
     "postinstall": "typings install",
     "build": "tsc",
     "deploy": "npm run build && sls dash deploy",
-    "dynamo": "npm run build && NODE_PATH=app sls function run tagger",
+    "dynamo": "npm run build && NODE_PATH=app sls function run dynamo",
     "tagger": "npm run build && NODE_PATH=app sls function run tagger"
   },
   "devDependencies": {
