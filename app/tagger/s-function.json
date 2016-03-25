@@ -22,17 +22,6 @@
       "requestParameters": {},
       "requestTemplates": "$${apiGatewayRequestTemplate}",
       "responses": "$${apiGatewayResponses}"
-    },
-    {
-      "path": "tagger",
-      "method": "POST",
-      "type": "AWS",
-      "authorizationType": "none",
-      "authorizerFunction": false,
-      "apiKeyRequired": false,
-      "requestParameters": {},
-      "requestTemplates": "$${apiGatewayRequestTemplate}",
-      "responses": "$${apiGatewayResponses}"
     }
   ],
   "events": [],
