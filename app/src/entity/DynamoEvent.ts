@@ -1,8 +1,8 @@
-export interface MainEvent {
+export interface DynamoEvent {
   method: string
   body: any
   id: string
   tableName: string
 }
 
-export default MainEvent
+export default DynamoEvent

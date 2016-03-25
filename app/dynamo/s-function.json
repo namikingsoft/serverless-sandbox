@@ -1,10 +1,10 @@
 {
-  "name": "main",
+  "name": "dynamo",
   "runtime": "nodejs",
   "description": "Serverless Lambda function for project: serverless-sandbox",
   "customName": false,
   "customRole": false,
-  "handler": "main/handler.handler",
+  "handler": "dynamo/handler.handler",
   "timeout": 300,
   "memorySize": 128,
   "authorizer": {},
@@ -13,7 +13,7 @@
   },
   "endpoints": [
     {
-      "path": "main",
+      "path": "dynamo",
       "method": "GET",
       "type": "AWS",
       "authorizationType": "none",
@@ -24,7 +24,7 @@
       "responses": "$${apiGatewayResponses}"
     },
     {
-      "path": "main/{id}",
+      "path": "dynamo/{id}",
       "method": "GET",
       "type": "AWS",
       "authorizationType": "none",
@@ -35,7 +35,7 @@
       "responses": "$${apiGatewayResponses}"
     },
     {
-      "path": "main",
+      "path": "dynamo",
       "method": "POST",
       "type": "AWS",
       "authorizationType": "none",
@@ -46,7 +46,7 @@
       "responses": "$${apiGatewayResponses}"
     },
     {
-      "path": "main/{id}",
+      "path": "dynamo/{id}",
       "method": "POST",
       "type": "AWS",
       "authorizationType": "none",
@@ -57,15 +57,7 @@
       "responses": "$${apiGatewayResponses}"
     }
   ],
-  "events": [
-    {
-      "name": "crontask",
-      "type": "schedule",
-      "config": {
-        "schedule": "rate(5 minutes)"
-      }
-    }
-  ],
+  "events": [],
   "environment": {
     "SERVERLESS_PROJECT": "serverless-sandbox",
     "SERVERLESS_STAGE": "${stage}",

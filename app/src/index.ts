@@ -1,11 +1,10 @@
 import * as Promise from 'bluebird'
 import {assign} from 'lodash'
 import Promisifier from './utils/Promisifier'
-import MainEvent from './entity/MainEvent'
+import DynamoEvent from './entity/DynamoEvent'
 
-const aws = require('aws-sdk')
-
-module.exports = (event: MainEvent): Promise<any> => {
+export function dynamo(event: DynamoEvent): Promise<any> {
+  const aws = require('aws-sdk')
   return new Promise<any>((resolve, reject) => {
     const promisifier = new Promisifier(resolve, reject)
     const dynamo = new aws.DynamoDB()
@@ -20,4 +19,3 @@ module.exports = (event: MainEvent): Promise<any> => {
     }
   })
 }
-
