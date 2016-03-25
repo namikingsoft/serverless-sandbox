@@ -5,16 +5,16 @@
     "noImplicitAny": true,
     "noEmitOnError": true,
     "moduleResolution": "node",
-    "baseUrl": "./lib",
+    "baseUrl": "./app/src",
     "outDir": "./app/lib",
     "strictNullChecks": true,
     "experimentalDecorators": true
   },
   "exclude": [
-    "app",
     "test",
     "typings",
     "node_modules",
+    "app/node_modules",
     "_meta"
   ]
 }
