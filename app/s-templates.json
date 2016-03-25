@@ -2,8 +2,7 @@
   "apiGatewayRequestTemplate": {
     "application/json": {
       "method": "$context.httpMethod",
-      "body": "$input.json('$')",
-      "id": "$input.params('id')"
+      "body": "$input.json('$')"
     }
   },
   "apiGatewayResponses": {

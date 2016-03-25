@@ -13,7 +13,8 @@
     "postinstall": "typings install",
     "build": "tsc",
     "deploy": "npm run build && sls dash deploy",
-    "start": "npm run build && NODE_PATH=app sls function run main"
+    "dynamo": "npm run build && NODE_PATH=app sls function run dynamo",
+    "tagger": "npm run build && NODE_PATH=app sls function run tagger"
   },
   "devDependencies": {
     "npm-check-updates": "^2.6.1",

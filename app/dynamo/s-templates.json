@@ -1,0 +1,8 @@
+{
+  "apiGatewayRequestTemplate": {
+    "application/json": {
+      "id": "$input.params('id')",
+      "tableName": "${project}-messages-${stage}"
+    }
+  }
+}

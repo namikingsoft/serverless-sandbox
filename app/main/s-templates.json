@@ -1,7 +1,0 @@
-{
-  "apiGatewayRequestTemplate": {
-    "application/json": {
-      "tableName": "${project}-messages-${stage}"
-    }
-  }
-}

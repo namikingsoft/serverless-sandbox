@@ -1,0 +1,7 @@
+{
+  "apiGatewayRequestTemplate": {
+    "application/json": {
+      "text": "$input.params('text')"
+    }
+  }
+}
